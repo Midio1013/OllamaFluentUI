@@ -95,26 +95,6 @@ python main.py
 
 3. 在聊天界面选择模型，开始对话
 
-## 📁 项目结构
-
-```
-ollama-fluent/
-├── main.py              # 主程序入口
-├── i18n.py              # 多语言支持模块
-├── config/              # 配置文件目录
-│   └── language.json    # 语言设置
-├── locales/             # 翻译文件目录
-│   ├── zh_CN.json       # 简体中文
-│   ├── en_US.json       # English
-│   ├── ja_JP.json       # 日本語
-│   ├── fr_FR.json       # Français
-│   ├── de_DE.json       # Deutsch
-│   ├── es_ES.json       # Español
-│   ├── ru_RU.json       # Русский
-│   └── ko_KR.json       # 한국어
-└── README.md            # 项目说明文档
-```
-
 ### 数据存储位置
 
 程序数据存储在系统应用数据目录：
