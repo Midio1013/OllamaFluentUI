@@ -6,7 +6,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![PySide6](https://img.shields.io/badge/PySide6-6.x-green.svg)](https://doc.qt.io/qtforpython-6/)
-[![License](https://img.shields.io/badge/License-AGPL-yellow.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-AGPL-3.0-yellow.svg)](LICENSE)
 
 </div>
 
