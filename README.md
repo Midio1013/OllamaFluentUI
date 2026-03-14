@@ -33,6 +33,21 @@
 
 ## 🚀 快速开始
 
+### 下载安装包
+
+| 平台 | 下载链接 |
+|------|---------|
+| Windows | [📥 下载](https://github.com/Midio1013/OllamaFluentUI/releases/) |
+
+### 使用步骤
+
+1. 下载安装包并安装
+2. 确保 Ollama 服务已启动（访问 https://ollama.com 下载安装）
+3. 打开应用，在「模型管理」页面刷新模型列表
+4. 选择一个模型即可开始对话
+
+## 🚀 自行编译
+
 ### 环境要求
 
 - Python 3.8+
@@ -41,7 +56,7 @@
 ### 安装依赖
 
 ```bash
-pip install PySide6 PySide6-Fluent-Widgets requests Pillow
+pip install -r requirements.txt
 ```
 
 ### 运行程序
@@ -49,6 +64,24 @@ pip install PySide6 PySide6-Fluent-Widgets requests Pillow
 ```bash
 python main.py
 ```
+
+### 打包为可执行文件
+
+项目支持打包为独立的可执行文件，方便分发给用户：
+
+```bash
+# 安装 PyInstaller
+pip install pyinstaller
+
+# 打包程序
+pyinstaller --name "Ollama Fluent UI" --windowed --icon icon.ico main.py
+
+# 生成的可执行文件位于 dist/Ollama Fluent UI/ 目录
+```
+
+打包后生成独立的可执行文件，用户无需安装 Python 环境即可运行。
+
+> 💡 **提示**：如需创建 NSIS 安装包，可进一步使用 NSIS 工具将生成的可执行文件打包为安装程序。
 
 ### 首次使用
 
@@ -63,6 +96,9 @@ ollama-fluent/
 ├── main.py              # 主程序入口
 ├── i18n.py              # 多语言支持模块
 ├── create_icon.py       # 图标生成脚本
+├── icon.ico             # Windows 图标文件
+├── icon.png             # PNG 图标
+├── icon.svg             # SVG 矢量图标
 ├── config/
 │   └── language.json    # 语言配置文件
 ├── locales/             # 翻译文件目录
@@ -74,7 +110,8 @@ ollama-fluent/
 │   ├── es_ES.json       # Español
 │   ├── ru_RU.json       # Русский
 │   └── ko_KR.json       # 한국어
-└── README.md
+├── README.md            # 项目说明文档
+└── requirements.txt     # Python 依赖列表
 ```
 
 ## 🎯 功能说明
