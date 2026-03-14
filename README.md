@@ -4,7 +4,7 @@
 
 一个使用 PySide6 + PySide6-Fluent-Widgets 实现的 Fluent Design 风格 Ollama 客户端
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/badge/Python-3.14.3-blue.svg)](https://www.python.org/downloads/)
 [![PySide6](https://img.shields.io/badge/PySide6-6.x-green.svg)](https://doc.qt.io/qtforpython/)
 [![License](https://img.shields.io/badge/License-AGPL--3.0-orange.svg)](https://opensource.org/licenses/AGPL-3.0)
 
